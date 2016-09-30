@@ -2,9 +2,9 @@
 
 This document describes the current status and the upcoming milestones of the NATS.io project.
 
-*Updated: Fri, 30 Sep 2016 20:01:02 GMT*
+*Updated: Fri, 30 Sep 2016 20:08:10 GMT*
 
-## NATS
+## NATS Overall
 
 #### gnatsd-1.0.0
 
