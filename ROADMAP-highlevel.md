@@ -8,7 +8,7 @@ This document describes the current status and the upcoming milestones of the NA
 
 #### gnatsd-1.0.0
 
-> * Namespace isolation by accout
+> * Namespace isolation by account
 * Support org or account grouping of resources
 * Rate limiting
 * Integrate Promethus
