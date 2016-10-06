@@ -17,7 +17,7 @@ This document describes the current status and the upcoming milestones of the NA
 
 > Project Dialtone is an effort to provide a subscription-based managed service around NATS. This managed service will provide all the capabilities of NATS on a highly resilient, secure and centralized infrastructure, with a low capital outlay and predictable monthly costs. 
 
-At a high level, the service will provide:
+>At a high level, the service will provide:
  * Account-based subscriptions using web form
  * Automated billing
  * Dashboard-based provisioning, security configuration, and usage monitoring
