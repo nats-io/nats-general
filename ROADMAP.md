@@ -1,117 +1,46 @@
-# NATS.io - Roadmap
+# NATS Master Roadmap
 
-This document describes the current status and the upcoming milestones of the NATS.io project.
+This document is a high-level outline of the roadmap for the NATS Project, identifying the major 
+components and their release relationships to other components.
 
-*Updated: Thu, 06 Oct 2016 20:12:17 GMT*
+* [NATS Goals](#nats-goals)
+* [NATS Components](#nats-components)
+* [Project Planning](#project-planning): release-relationship to the Docker Platform.
 
-## NATS Overall
+This roadmap is a living document, providing an overview of the goals and
+considerations made in respect of the future of the project.
 
-#### Milestone Summary
+## NATS Goals
 
-| Status | Milestone | Goals | ETA |
-| :---: | :--- | :---: | :---: |
-| 🚀 | **[gnatsd-1.0.0](#gnatsd-1.0.0)** | 0 / 0 | Fri Oct 28 2016 |
-| 🚀 | **[Project Dialtone](#project-dialtone)** | 0 / 0 | Fri Dec 16 2016 |
-| 🚀 | **[Project Catamaran](#project-catamaran)** | 0 / 0 | Fri Dec 30 2016 |
+THe overaching goal of NATS is to provide a messaging platform that prioritizes the following key characteristics:
+  
+ * Performance - achieve the highest message throughput and lowest latency possible
+ * Stability - "always on". Nothing we put in NATS should cause it to crash, and NATS should guard itself against unruly client behavior that might compromise performance or availability for all clients.
+ * Simplicity - a compact, simple, and easily mastered API that requires no knowledge about the implementation of the broker (`gnatsd`), and a broker that is lightweight, requiring minimal configuration, system resources and external dependencies.
+ * Security - NATS supports basic security features: authentication, authorization and encryption (TLS) 
 
-#### gnatsd-1.0.0
+## NATS Components
 
-> * Namespace isolation by accout
-* Support org or account grouping of resources
-* Rate limiting
-* Integrate Promethus
-* Auto-unsubscribe should be atomic with SUB operation
-* Client pruning/rebalancing
-* Associate user with connection in /connz
-* Hot configuration reload
+Components of the NATS Project are managed via GitHub [milestones](https://github.com/nats-io/roadmap/milestones).
+Upcoming features and bugfixes for a component will be added to the relevant milestone. 
+If a feature or bugfix is not part of a milestone, it is currently unscheduled for implementation. 
 
-
-🚀 &nbsp;**OPEN** &nbsp;&nbsp;📉 &nbsp;&nbsp;**0 / 0** goals completed **(0%)** &nbsp;&nbsp;📅 &nbsp;&nbsp;**Fri Oct 28 2016**
-
-| Status | Goal | Labels | Repository |
-| :---: | :--- | --- | --- |
-
-
-#### Project Dialtone
-
-> Project Dialtone is an effort to provide a subscription-based managed service around NATS. This managed service will provide all the capabilities of NATS on a highly resilient, secure and centralized infrastructure, with a low capital outlay and predictable monthly costs. 
-
-At a high level, the service will provide:
- * Account-based subscriptions using web form
- * Automated billing
- * Dashboard-based provisioning, security configuration, and usage monitoring
- * Choice of major cloud providers
-
-
-🚀 &nbsp;**OPEN** &nbsp;&nbsp;📉 &nbsp;&nbsp;**0 / 0** goals completed **(0%)** &nbsp;&nbsp;📅 &nbsp;&nbsp;**Fri Dec 16 2016**
-
-| Status | Goal | Labels | Repository |
-| :---: | :--- | --- | --- |
-
-
-#### Project Catamaran
-
-> Introduce clustering features to NATS Streaming via RAFT protocol ([GRAFT](https://github.com/nats-io/graft)). 
-
-🚀 &nbsp;**OPEN** &nbsp;&nbsp;📉 &nbsp;&nbsp;**0 / 0** goals completed **(0%)** &nbsp;&nbsp;📅 &nbsp;&nbsp;**Fri Dec 30 2016**
-
-| Status | Goal | Labels | Repository |
-| :---: | :--- | --- | --- |
-
-
-## NATS Server
-
-#### Milestone Summary
-
-| Status | Milestone | Goals | ETA |
-| :---: | :--- | :---: | :---: |
-| 🚀 | **[gnatsd-1.0.0](#gnatsd-1.0.0)** | 0 / 8 | Thu Oct 27 2016 |
-| 🚀 | **[Project Dialtone](#project-dialtone)** | 0 / 0 | Fri Dec 16 2016 |
-
-#### gnatsd-1.0.0
-
-> 
-
-🚀 &nbsp;**OPEN** &nbsp;&nbsp;📉 &nbsp;&nbsp;**0 / 8** goals completed **(0%)** &nbsp;&nbsp;📅 &nbsp;&nbsp;**Thu Oct 27 2016**
-
-| Status | Goal | Labels | Repository |
-| :---: | :--- | --- | --- |
-| ❌ | [Namespace isolation by account](https://github.com/nats-io/gnatsd/issues/348) | | <a href=https://github.com/nats-io/gnatsd>nats-io/gnatsd</a> |
-| ❌ | [Support org or account grouping of resources](https://github.com/nats-io/gnatsd/issues/347) | | <a href=https://github.com/nats-io/gnatsd>nats-io/gnatsd</a> |
-| ❌ | [Rate limiting](https://github.com/nats-io/gnatsd/issues/346) | | <a href=https://github.com/nats-io/gnatsd>nats-io/gnatsd</a> |
-| ❌ | [Integrate Promethus ](https://github.com/nats-io/gnatsd/issues/345) | | <a href=https://github.com/nats-io/gnatsd>nats-io/gnatsd</a> |
-| ❌ | [Auto-unsubscribe should be atomic with SUB operation](https://github.com/nats-io/gnatsd/issues/344) | | <a href=https://github.com/nats-io/gnatsd>nats-io/gnatsd</a> |
-| ❌ | [Client pruning/rebalancing](https://github.com/nats-io/gnatsd/issues/343) | | <a href=https://github.com/nats-io/gnatsd>nats-io/gnatsd</a> |
-| ❌ | [Associate user with connection in /connz](https://github.com/nats-io/gnatsd/issues/342) | | <a href=https://github.com/nats-io/gnatsd>nats-io/gnatsd</a> |
-| ❌ | [Hot configuration reload](https://github.com/nats-io/gnatsd/issues/338) | | <a href=https://github.com/nats-io/gnatsd>nats-io/gnatsd</a> |
-
-
-#### Project Dialtone
-
-> 
-
-🚀 &nbsp;**OPEN** &nbsp;&nbsp;📉 &nbsp;&nbsp;**0 / 0** goals completed **(0%)** &nbsp;&nbsp;📅 &nbsp;&nbsp;**Fri Dec 16 2016**
-
-| Status | Goal | Labels | Repository |
-| :---: | :--- | --- | --- |
-
-
-## NATS Streaming
-
-#### Milestone Summary
-
-| Status | Milestone | Goals | ETA |
-| :---: | :--- | :---: | :---: |
-| 🚀 | **[Project Catamaran](#project-catamaran)** | 0 / 0 | Fri Dec 30 2016 |
-
-#### Project Catamaran
-
-> Introduce clustering features to NATS Streaming vis-a-vis RAFT (GRAFT).
-
-🚀 &nbsp;**OPEN** &nbsp;&nbsp;📉 &nbsp;&nbsp;**0 / 0** goals completed **(0%)** &nbsp;&nbsp;📅 &nbsp;&nbsp;**Fri Dec 30 2016**
-
-| Status | Goal | Labels | Repository |
-| :---: | :--- | --- | --- |
+The NATS Project consists of several components, including:
+ 
+ * NATS 
+   * Server (`gnatsd`) - http://github.com/nats-io/gnatsd
+   * Clients - http://nats.io/download
+ * NATS Streaming 
+   * Server - http://github.com/nats-io/nats-streaming-server
+   * Clients - http://nats.io/download
+ * NATS Connectors - http://github.com/nats-io/nats-connector-framework
+ * NATS Cloud (http://nats.cloud)
 
 
 
+
+## Project Planning
+
+An [Open-Source Planning Process](https://github.com/nats-io/roadmap/wiki/Open-Source-Planning-Process) is 
+used to define the Roadmap. [Project Pages](https://github.com/nats-io/roadmap/wiki) define the 
+goals for each Milestone and identify current progress.
