@@ -7,7 +7,7 @@ Our overall project plan is kept updated on [the wiki](https://github.com/nats-i
 
 * [NATS Goals](#nats-goals)
 * [NATS Components](#nats-components)
-* [Project Planning](#project-planning): release-relationship to the Docker Platform.
+* [Project Planning](#project-planning)
 
 This roadmap is a living document, providing an overview of the goals and
 considerations made in respect of the future of the project.
@@ -46,6 +46,7 @@ The NATS Project consists of several components, including:
 An [Open-Source Planning Process](https://github.com/nats-io/roadmap/wiki/Open-Source-Planning-Process) is 
 used to define the Roadmap. [Project Pages](https://github.com/nats-io/roadmap/wiki) define the 
 goals for each Milestone and identify current progress.
-Welcome! The NATS Master Roadmap can be found [here](https://github.com/nats-io/roadmap/wiki)
+
+The NATS Master Project Plan can be found [here](https://github.com/nats-io/roadmap/wiki).
 
 
