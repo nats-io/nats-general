@@ -14,7 +14,7 @@ considerations made in respect of the future of the project.
 
 ## NATS Goals
 
-THe overaching goal of NATS is to provide a messaging platform that prioritizes the following key characteristics:
+The overaching goal of NATS is to provide a messaging platform that prioritizes the following key characteristics:
   
  * Performance - achieve the highest message throughput and lowest latency possible
  * Stability - "always on". Nothing we put in NATS should cause it to crash, and NATS should guard itself against unruly client behavior that might compromise performance or availability for all clients.
