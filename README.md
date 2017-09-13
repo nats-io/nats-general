@@ -1,52 +1,25 @@
-# NATS Master Roadmap
+# NATS Roadmap
 
-This document is a high-level outline of the roadmap for the NATS Project, identifying the major 
-components and their release relationships to other components.
+This document is the NATS.io product roadmap for some of the key features our team plan to deliver in the near future.  Only high level issues and features are listed; we’ll always continue work on minor enhancements that may not be listed here.
 
-Our overall project plan is kept updated on [the wiki](https://github.com/nats-io/roadmap/wiki).
+_We are currently working through a detailed process of prioritizing goals and issues to create a well defined release schedule for the short term, and to provide a more detailed roadmap for your long term planning.  __Expect an update in Q4 2017.__ _
 
-* [NATS Goals](#nats-goals)
-* [NATS Components](#nats-components)
-* [Project Planning](#project-planning)
+If you have any questions or comments on these items, please let us know via GitHub here.  You can also always communicate through Slack or Google Group with us on our [community page](https://www.nats.io/community) - we look forward to hearing from you!
 
-This roadmap is a living document, providing an overview of the goals and
-considerations made in respect of the future of the project.
+__We will target the following features for completion in Q1 2018:__
+* NATS Core
+    * Official debian and RPM Packages
+    * Subscription scalability for the java client
+* NATS Streaming
+    * Fault tolerance and High Availability (Clustering with Full Replication).  A beta version may be available late 2017.
+    * A database store implemention; a step toward our goal to further increase scalability
 
-## NATS Goals
+__2018 Future items to be planned:__
+* Streaming support in NATS.Cloud
+* NATS Server Cluster Gateway
+* NATS Server Extensible Authentication and Authorization
+* Further extending NATS Streaming scalability
 
-The overaching goal of NATS is to provide a messaging platform that prioritizes the following key characteristics:
-  
- * Performance - achieve the highest message throughput and lowest latency possible
- * Stability - "always on". Nothing we put in NATS should cause it to crash, and NATS should guard itself against unruly client behavior that might compromise performance or availability for all clients.
- * Simplicity - a compact, simple, and easily mastered API that requires no knowledge about the implementation of the broker (`gnatsd`), and a broker that is lightweight, requiring minimal configuration, system resources and external dependencies.
- * Security - NATS supports basic security features: authentication, authorization and encryption (TLS) 
+We will continually work to improve our documentation to be clear and concise.
 
-## NATS Components
-
-Components of the NATS Project are managed via GitHub [milestones](https://github.com/nats-io/roadmap/milestones).
-Upcoming features and bugfixes for a component will be added to the relevant milestone. 
-If a feature or bugfix is not part of a milestone, it is currently unscheduled for implementation. 
-
-The NATS Project consists of several components, including:
- 
- * NATS 
-   * Server (`gnatsd`) - http://github.com/nats-io/gnatsd
-   * Clients - http://nats.io/download
- * NATS Streaming 
-   * Server - http://github.com/nats-io/nats-streaming-server
-   * Clients - http://nats.io/download
- * NATS Connectors - http://github.com/nats-io/nats-connector-framework
- * NATS Cloud (http://nats.cloud)
-
-
-
-
-## Project Planning
-
-An [Open-Source Planning Process](https://github.com/nats-io/roadmap/wiki/Open-Source-Planning-Process) is 
-used to define the Roadmap. [Project Pages](https://github.com/nats-io/roadmap/wiki) define the 
-goals for each Milestone and identify current progress.
-
-The NATS Master Project Plan can be found [here](https://github.com/nats-io/roadmap/wiki).
-
-
+Stay tuned for updates as we refine our roadmap and release schedules!
