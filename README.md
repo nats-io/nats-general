@@ -2,8 +2,6 @@
 
 This document is the [NATS.io](https://nats.io/) product roadmap for some of the key features our team is planning to deliver in the near future.  Only high level features and issues are listed; we’ll certainly continue to work on minor enhancements that may not be detailed here.
 
-_We are currently working through a detailed process of prioritizing goals and issues to create a well defined release schedule for the short term, and to provide a more detailed roadmap for your long term planning.  __Expect an update in Q4 2017.__ _
-
 If you have any questions or comments on these items, please let us know via GitHub [here](https://github.com/nats-io/roadmap/issues/new).  You can also always communicate through Slack or Google Group with us on our [community page](https://www.nats.io/community) - we look forward to hearing from you!
 
 __We will target the following features for completion in Q1 2018:__
