@@ -10,7 +10,9 @@ A change to a protocol that will alter the existing contract with the client wil
 
 Any non-breaking change to the protocol results in a minor version bump.  Changes in the category would be be adding to the content of `INFO` messages that can be optionally used, extending an existing protocol verb in a non-breaking manner, or adding a new optional protocol verb to extend functionality.  A client working with NATS protocol version with the same major version and less than or equal to the minor version as the server will continue to operate as expected.
 
-| Protocol | Version | Components |
+If a protocol version is not specified in code or documentation, one may assume 1.X for the NATS server, and 0.x for the NATS streaming server.  Until the NATS streaming server reaches 1.0, breaking changes, while unlikely, may be introduced.  This is congruent with semantic API versioning.
+
+| Protocol | Current Version | Components |
 | ---------|---------|------------|
 | NATS Client Protocol | 1.0.0 | Client / Server |
 | NATS Server Protocol | 1.0.0 | Server / Server |
