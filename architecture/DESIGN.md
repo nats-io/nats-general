@@ -1,7 +1,7 @@
 
 # NATS Design Considerations
 
-NATS is a bit different than other messaging products in that NATS is comprised of two components: core NATS, and NATS streaming.  
+NATS is a bit different than other messaging products in that NATS is comprised of two complementary components: core NATS, and NATS streaming.  
 
 Most messaging solutions build persistence and guarantees (what streaming provides) into their base product.  There are advantages and disadvantages to both approaches, but disadvantages are usually presented as design challenges rather than feature limitations.  The advantage NATS leverages in separating these components is that the core NATS product does not need to sacrifice performance for features found in NATS streaming.  
 
@@ -24,7 +24,7 @@ The server protocol and client protocol provides a way to propagate this informa
 
 This means NATS has no requirement for physical storage, requires little configuration, and can perform extremely well.
 
-Naturally, there are a number of features these design goals preclude.  So what notable features are NOT supported in core NATS?
+Naturally, there are a number of features these design goals preclude.  What notable features are *NOT* supported in core NATS?
 
 - Message delivery guarantees (any persistence of data beyond runtime)
 - Transactions
@@ -46,6 +46,6 @@ NATS streaming provides:
 - Rate limiting
 - Durable Subscriptions
 
-This means NATS streaming complements core NATS to provide a richer feature set, and while performance is always a strong consideration, NATS streaming features may be added at the expense of raw performance when compared to core NATS.  To generalize, features that are not provided in core NATS due to design principals may be added to NATS streaming.
+This means NATS streaming complements core NATS to provide a richer feature set, and while performance is always a strong consideration, NATS streaming features may be added at the expense of raw performance when compared to core NATS.  To generalize, message persistence related features that are not provided in core NATS due to design principals may be added to NATS streaming.
 
 In discussion of these design features, we’ve outlined the values we apply to design decision.  That being said, we certainly don’t want to dissuade contributions or raising of issues that will help in the continued evolution of NATS.  If there is a feature in either component you’d like to see, please open an issue for discussion.
