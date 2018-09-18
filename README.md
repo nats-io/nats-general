@@ -1,14 +1,23 @@
 # NATS Roadmap
 
-This document is the [NATS.io](https://nats.io/) product roadmap for some of the key features our team is planning to deliver in the near future.  Only high level features and issues are listed; we’ll certainly continue to work on minor enhancements that may not be detailed here.
+This is the [NATS.io](https://nats.io/) product roadmap for some of the key features our team is planning to deliver.  Only high level features and issues are listed; we’ll certainly continue to work on minor enhancements that are not listed here.
 
-If you have any questions or comments on these items, please let us know via GitHub [here](https://github.com/nats-io/roadmap/issues/new).  You can also always communicate through Slack or Google Group with us on our [community page](https://www.nats.io/community) - we look forward to hearing from you!
+If you have any questions or comments on these items, please let us know via GitHub [here](https://github.com/nats-io/nats-general/issues/new).  You can also always communicate through Slack or Google Group with us on our [community page](https://www.nats.io/community) - we look forward to hearing from you!
 
-__2018 Future items to be planned:__
-* Streaming support in [NATS.Cloud](https://www.nats.cloud/)
+__2018 features and enhancements:__
+
 * NATS Server [Cluster Gateway](https://github.com/nats-io/gnatsd/issues/452)
+* [NKey](https://github.com/nats-io/nkeys) support across maintainer supported clients
+* [Drain mode](https://github.com/nats-io/go-nats/pull/378) support across maintainer supported clients
+* Support for multiple isolated accounts in the same server
+* Decentralized Authentication and Authorization using JWTs and NKeys
+
+__2019 Future items to be planned:__
+
+* Extending [streaming](https://github.com/nats-io/nats-streaming-server/issues/168) scalability and performance (JETSTREAM)
+* [Websocket Support](https://github.com/nats-io/gnatsd/issues/315)
+* [MQTT Support](https://github.com/nats-io/nats-connector-framework/issues/18)
 * NATS Server [Extensible Authentication and Authorization](https://github.com/nats-io/gnatsd/issues/434)
-* Further extending [NATS Streaming scalability](https://github.com/nats-io/nats-streaming-server/issues/168)
 
 We will continually work to improve our documentation to be clear and concise.
 
