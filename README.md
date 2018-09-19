@@ -33,4 +33,4 @@ Stay tuned for updates as we refine our roadmap and release schedules!
 
 ### Market Analyst Reports
 
-* Ovum's [On the Radar: NATS](reports/On_The_Radar_NATS.pdf)
+* Ovum's [On the Radar: NATS](reports/On_The_Radar_NATS.pdf) report
