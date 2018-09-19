@@ -22,3 +22,15 @@ __2019 Future items to be planned:__
 We will continually work to improve our documentation to be clear and concise.
 
 Stay tuned for updates as we refine our roadmap and release schedules!
+
+## Other Resources
+
+### Architecture and Design
+
+* [Understanding NATS Architecture](architecture/ARCHITECTURE.md)
+* [NATS Design Considerations](architecture/DESIGN.md)
+* [NATS Versioning Scheme](VERSIONING.md)
+
+### Market Analyst Reports
+
+* Ovum's [On the Radar: NATS](reports/On_the_Radar_NATS.pdf)
