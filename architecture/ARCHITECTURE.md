@@ -82,7 +82,7 @@ NATS streaming supports two methods to acheive fault tolerance / high availabili
 
 ## Partitioning
 
-Streaming servers can be [partitioned](https://github.com/nats-io/nats-streaming-server#partitioning) to scale.  Multiple streaming servers in the same cluster distribute work based on assigned channnels.
+Streaming servers can be [partitioned](https://github.com/nats-io/nats-streaming-server#partitioning) to scale.  Multiple streaming servers in the same cluster distribute work based on assigned channels.
 
 ![NATS Streaming Server Partitioning](images/streaming2.jpg "NATS Streaming Partitioning Diagram")
 
