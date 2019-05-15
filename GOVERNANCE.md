@@ -13,8 +13,8 @@ Maintainers are responsible for one or more components within a project, and are
 Ideally, all project decisions are resolved by consensus. If this is not possible, maintainers may call a vote. Unless otherwise specified in this document, any vote will be decided by a 2/3 majority that must include a core-maintainer. Maintainers belonging to the same company will count as one vote e.g., 4 maintainers employed by company “X” will only have one combined vote.
 
 ## Changes in Maintainership
-New maintainers must be proposed by an existing maintainer or core-maintainer and must be elected by a 2/3 majority organization vote. Maintainers can be removed by a 2/3 majority organization vote or can resign by notifying the core-maintainers
-Core-maintainers must be proposed by an existing core-maintainer and must be elected by a 2/3 majority core-maintainer vote. Core-maintainers can be removed by a 2/3 majority core-maintainer vote
+New maintainers must be proposed by an existing maintainer or core-maintainer and must be elected by a 2/3 majority organization vote. Maintainers can be removed by a 2/3 majority organization vote or can resign by notifying the core-maintainers.
+Core-maintainers must be proposed by an existing core-maintainer and must be elected by a 2/3 majority core-maintainer vote. Core-maintainers can be removed by a 2/3 majority core-maintainer vote.
 
 ## GitHub Project Administration
 Core-maintainers will be added to the NATS GitHub organization and be made an owner of the GitHub organization.
