@@ -20,7 +20,7 @@ The NATS server supports [TLS](https://github.com/nats-io/gnatsd#tls) and [Autho
 
 ### Clustering
 
-Running a single NATS server introduces a SPOF.  In order to provide high availability and scalability, NATS servers support full mesh clustering. Each server is connected to all other servers in the cluster.  There is a one-hop message routing maximum, ensuring messages will never loop througout a cluster.  The servers communicate with each other using a [server-to-server clustering protocol](http://nats.io/documentation/internals/nats-server-protocol/) over a TCP connection.  The protocol supports "discovery" to propogate topology information and changes in real-time with other members of the cluster and clients.  Thus, servers can be dynamially added or removed from a cluster at runtime with zero downtime.  Ideally, a client will have at least 2 addresses of "seed" servers.
+Running a single NATS server introduces a SPOF.  In order to provide high availability and scalability, NATS servers support full mesh clustering. Each server is connected to all other servers in the cluster.  There is a one-hop message routing maximum, ensuring messages will never loop througout a cluster.  The servers communicate with each other using a [server-to-server clustering protocol](http://nats.io/documentation/internals/nats-server-protocol/) over a TCP connection.  The protocol supports "discovery" to propogate topology information and changes in real-time with other members of the cluster and clients.  Thus, servers can be dynamcially added or removed from a cluster at runtime with zero downtime.  Ideally, a client will have at least 2 addresses of "seed" servers.
 
 ![NATS Server Cluster](images/cluster.jpg "NATS Server Cluster")
 
@@ -88,7 +88,7 @@ Streaming servers can be [partitioned](https://github.com/nats-io/nats-streaming
 
 ## Streaming client design and architecture
 
- The [NATS streaming protocol](http://nats.io/documentation/streaming/nats-streaming-protocol/) is more complex, as it requires a larger number of fields in the internal protocol messages. It is a binary protocol over the NATS protocol utlilizing [protobuf](https://github.com/google/protobuf) for serialization. While NATS streaming clients use *a different client API*, many of the of the features found in core NATS are available to NATS streaming clients. However, streaming messages and core NATS messages are not interchangable. NATS streaming also uses a separate subject namespace than core NATS, so messages can not be published via streaming and subscribed via core NATS.
+ The [NATS streaming protocol](http://nats.io/documentation/streaming/nats-streaming-protocol/) is more complex, as it requires a larger number of fields in the internal protocol messages. It is a binary protocol over the NATS protocol utlilizing [protobuf](https://github.com/google/protobuf) for serialization. While NATS streaming clients use *a different client API*, many of the features found in core NATS are available to NATS streaming clients. However, streaming messages and core NATS messages are not interchangable. NATS streaming also uses a separate subject namespace than core NATS, so messages can not be published via streaming and subscribed via core NATS.
  
  All officially supported clients provide the following:
  
