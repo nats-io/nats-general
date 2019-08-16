@@ -10,7 +10,7 @@ Core NATS is the ideal [messaging](http://nats.io/documentation/concepts/nats-me
 
 ## NATS Server
 
-The NATS server routes messages between NATS clients - applications that use the NATS protocol (usually via a NATS client library) to connect to the the NATS server ([gnatsd](https://github.com/nats-io/gnatsd)).  Logically, applications communicate over a [message bus](http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBus.html), but the network configuration is the standard TCP client-server model.
+The NATS server routes messages between NATS clients - applications that use the NATS protocol (usually via a NATS client library) to connect to the the NATS server ([nats-server](https://github.com/nats-io/nats-server)).  Logically, applications communicate over a [message bus](http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBus.html), but the network configuration is the standard TCP client-server model.
 
 ![TCP NATS Client/Server](images/simple1.jpg "Simple TCP NATS Client/Server")
 
