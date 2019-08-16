@@ -1,4 +1,4 @@
-# General NATS inforamtion
+# General NATS information
 
 This repository has general nats information and hosts various documents and
 reports.  Be sure to visit [NATS.io](https://nats.io) for the most up to date
