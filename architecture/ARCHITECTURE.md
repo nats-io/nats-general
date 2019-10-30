@@ -94,7 +94,7 @@ Streaming servers can be [partitioned](https://github.com/nats-io/nats-streaming
  
   - A logical streaming connection with the NATS streaming server over core NATS.
   - Publishing of Messages
-  - Subscribing to subjects to receive messages, supporting the various subscription options found [here](https://github.com/nats-io/go-nats-streaming#subscription-start-ie-replay-options), as well as [durable subscription](https://github.com/nats-io/go-nats-streaming#durable-subscriptions) support.
+  - Subscribing to subjects to receive messages, supporting the various subscription options found [here](https://github.com/nats-io/stan.go#subscription-start-ie-replay-options), as well as [durable subscription](https://github.com/nats-io/stan.go#durable-subscriptions) support.
   - Queue group subscriptions.
   - Support for handling publish acknowledgements and acknowedging received messages.
 
