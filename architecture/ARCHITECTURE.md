@@ -101,6 +101,6 @@ Streaming servers can be [partitioned](https://github.com/nats-io/nats-streaming
 The typical flow of a NATS streaming client is very similar to a core NATS client:
 
 1. Establish a connection to a streaming server
-2. Optionally subscribe to subject(s) and setup handlers to process messages.  Messaged are acknowedged.
+2. Optionally subscribe to subject(s) and setup handlers to process messages.  Messaged are acknowledged.
 3. Optionally publish messages, and handle publish acknowedgements from the server.
 4. When finished, a client will close its connection with the NATS streaming server.
