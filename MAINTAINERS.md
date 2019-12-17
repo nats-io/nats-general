@@ -10,7 +10,7 @@ Maintainership is on a per project basis.
   - Alberto Ricart <alberto@nats.io> [@aricart](https://github.com/aricart)
   - Waldemar Quevedo <wally@nats.io> [@wallyqs](https://github.com/wallyqs)
   - Colin Sullivan <colin@nats.io> [@ColinSullivan1](https://github.com/ColinSullivan1)
-  - Stephen Asubry [@sasbury](https://github.com/sasbury) 
+  - Stephen Asbury [@sasbury](https://github.com/sasbury) 
 
 ### Maintainers
   - R.I. Pienaar <rip@devco.net> [@ripienaar](https://github.com/ripienaar)
