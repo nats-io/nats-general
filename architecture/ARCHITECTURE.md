@@ -20,7 +20,7 @@ The NATS server supports [TLS](https://nats-io.github.io/docs/developer/security
 
 ### Clustering
 
-Running a single NATS server introduces a SPOF.  In order to provide high availability and scalability, NATS servers support full mesh clustering. Each server is connected to all other servers in the cluster.  There is a one-hop message routing maximum, ensuring messages will never loop througout a cluster.  The servers communicate with each other using a [server-to-server clustering protocol](https://nats-io.github.io/docs/nats_protocol/nats-server-protocol.html) over a TCP connection.  The protocol supports "discovery" to propogate topology information and changes in real-time with other members of the cluster and clients.  Thus, servers can be dynamcially added or removed from a cluster at runtime with zero downtime.  Ideally, a client will have at least 2 addresses of "seed" servers.
+Running a single NATS server introduces a SPOF.  In order to provide high availability and scalability, NATS servers support full mesh clustering. Each server is connected to all other servers in the cluster.  There is a one-hop message routing maximum, ensuring messages will never loop througout a cluster.  The servers communicate with each other using a [server-to-server clustering protocol](https://nats-io.github.io/docs/nats_protocol/nats-server-protocol.html) over a TCP connection.  The protocol supports "discovery" to propagate topology information and changes in real-time with other members of the cluster and clients.  Thus, servers can be dynamcially added or removed from a cluster at runtime with zero downtime.  Ideally, a client will have at least 2 addresses of "seed" servers.
 
 ![NATS Server Cluster](images/cluster.jpg "NATS Server Cluster")
 
