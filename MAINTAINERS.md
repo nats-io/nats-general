@@ -6,7 +6,7 @@ Maintainership is on a per project basis.
   - Ginger Collison <ginger@nats.io> [gcolliso](https://github.com/gcolliso)
   - David Kemper <djk@nats.io> [@davidkemper](https://github.com/davidkemper)
   - Ivan Kozlovic <ivan@nats.io> [@kozlovic](https://github.com/kozlovic)
-  - Jaime Pina <jaime@nats.io> [@variadico](https://https://github.com/variadico)
+  - Jaime Pina <jaime@variadi.co> [@variadico](https://https://github.com/variadico)
   - Alberto Ricart <alberto@nats.io> [@aricart](https://github.com/aricart)
   - Waldemar Quevedo <wally@nats.io> [@wallyqs](https://github.com/wallyqs)
   - Colin Sullivan <colin@nats.io> [@ColinSullivan1](https://github.com/ColinSullivan1)
