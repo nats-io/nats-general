@@ -11,9 +11,9 @@ Maintainership is on a per project basis.
   - Waldemar Quevedo <wally@nats.io> [@wallyqs](https://github.com/wallyqs)
   - Colin Sullivan <colin@nats.io> [@ColinSullivan1](https://github.com/ColinSullivan1)
   - Stephen Asbury [@sasbury](https://github.com/sasbury) 
+  - R.I. Pienaar <rip@devco.net> [@ripienaar](https://github.com/ripienaar)
 
 ### Maintainers
-  - R.I. Pienaar <rip@devco.net> [@ripienaar](https://github.com/ripienaar)
   - Paulo Pires [@pires](https://github.com/pires)  
   - Oleg Shaldybin <olegsh@google.com> [@olegshaldibin](https://github.com/olegshaldibin)
   - Brian Shannan <brianshannan@gmail.com> [@brianshannan](https://github.com/brianshannan)
