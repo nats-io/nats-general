@@ -34,7 +34,7 @@ For formal votes, a specific statement of what is being voted on should be added
 Maintainers will be added to the NATS GitHub organization.
 
 ## Approving and Merging PRs
-All PRs must receive approval from at least two maintainers prior to merging.
+All PRs must receive approval from at least one maintainer prior to merging.
 
 ## Changes in Governance
 All changes in Governance require a 2/3 majority organization vote of the maintainers.
