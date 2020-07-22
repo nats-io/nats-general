@@ -15,7 +15,7 @@ Current list of NATS Organization Maintainers. Maintainership is on a per projec
   - Alberto Ricart <alberto@nats.io> [@aricart](https://github.com/aricart)
   - Michael Ries <riesmmm@gmail.com> [@mmmries](https://github.com/mmmries)
   - Brian Shannan <brianshannan@gmail.com> [@brianshannan](https://github.com/brianshannan)
-  - Oleg Shaldybin <olegsh@google.com> [@olegshaldibin](https://github.com/olegshaldibin)
+  - Oleg Shaldybin <olegsh@google.com> [@olegshaldybin](https://github.com/olegshaldybin)
   - Charlie Strawn <cdstrawn@gmail.com> [@charliestrawn](https://github.com/charliestrawn)
   - Colin Sullivan <colin@nats.io> [@ColinSullivan1](https://github.com/ColinSullivan1)
   - Christopher Watford <christopher.watford@ge.com> [@watfordgnf](https://github.com/watfordgnf)
