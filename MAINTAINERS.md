@@ -6,7 +6,7 @@ Current list of NATS Organization Maintainers. Maintainership is on a per projec
   - Lev Brouk [@levb](https://github.com/levb)
   - Derek Collison <derek@nats.io> [@derekcollison](https://github.com/derekcollison)
   - Ginger Collison <ginger@nats.io> [@gcolliso](https://github.com/gcolliso)
-  - Matthias Hanel <matthias.hanel@nats.io> [@matthiashanel](https://github.com/matthiashanel)
+  - Matthias Hanel <mh@nats.io> [@matthiashanel](https://github.com/matthiashanel)
   - David Kemper <djk@nats.io> [@davidkemper](https://github.com/davidkemper)
   - Ivan Kozlovic <ivan@nats.io> [@kozlovic](https://github.com/kozlovic)
   - R.I. Pienaar <rip@devco.net> [@ripienaar](https://github.com/ripienaar)
