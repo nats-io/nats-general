@@ -77,7 +77,7 @@ Regardless, from a network (TCP) standpoint the client and NATS streaming server
 
 NATS streaming supports two methods to acheive fault tolerance / high availability:
 
-  * The use of lightweight [fault tolerant](https://github.com/nats-io/nats-streaming-server#fault-tolerance) warm standby backups.
+  * The use of lightweight [fault tolerant](https://docs.nats.io/nats-streaming-concepts/ft) warm standby backups.
   * Full log replication amongst multiple instances using [Hashicorp RAFT](https://github.com/hashicorp/raft).
 
 ## Partitioning
