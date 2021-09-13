@@ -9,6 +9,7 @@ Current list of NATS Organization Maintainers. Maintainership is on a per projec
   - Matthias Hanel <mh@nats.io> [@matthiashanel](https://github.com/matthiashanel)
   - David Kemper <djk@nats.io> [@davidkemper](https://github.com/davidkemper)
   - Ivan Kozlovic <ivan@nats.io> [@kozlovic](https://github.com/kozlovic)
+  - Phil Pennock <pdp@nats.io> [@philpennock](https://github.com/philpennock)
   - R.I. Pienaar <rip@devco.net> [@ripienaar](https://github.com/ripienaar)
   - Jaime Pina <jaime@variadi.co> [@variadico](https://https://github.com/variadico)
   - Paulo Pires [@pires](https://github.com/pires)
