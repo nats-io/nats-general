@@ -6,7 +6,7 @@ NATS messaging is comprised of core NATS, and NATS streaming.  Core NATS support
 
 # Core NATS
 
-Core NATS is the ideal [messaging](https://nats-io.github.io/docs/developer/concepts/subjects.html) software for [publish/subscribe](https://nats-io.github.io/docs/developer/concepts/pubsub.html), [request/reply](https://nats-io.github.io/docs/developer/concepts/reqreply.html), and [work queue](https://nats-io.github.io/docs/developer/concepts/queue.html) messaging patterns.
+Core NATS is the ideal [messaging](https://docs.nats.io/nats-concepts/subjects.html) software for [publish/subscribe](https://docs.nats.io/nats-concepts/core-nats/pubsub.html), [request/reply](https://docs.nats.io/nats-concepts/core-nats/reqreply.html), and [work queue](https://docs.nats.io/nats-concepts/core-nats/queue.html) messaging patterns.
 
 ## NATS Server
 
@@ -14,23 +14,23 @@ The NATS server routes messages between NATS clients - applications that use the
 
 ![TCP NATS Client/Server](images/simple1.jpg "Simple TCP NATS Client/Server")
 
-NATS clients send messages to the NATS server over TCP connections established by NATS client libraries.  Published messages are delivered to clients based on subscriptions made to subjects.  
+NATS clients send messages to the NATS server over TCP connections established by NATS client libraries.  Published messages are delivered to clients based on subscriptions made to subjects.
 
-The NATS server supports [TLS](https://nats-io.github.io/docs/developer/security/tls.html) and [Authorization/Authentication](https://nats-io.github.io/docs/developer/security/intro.html).
+The NATS server supports [TLS](https://docs.nats.io/running-a-nats-service/configuration/securing_nats/auth_intro/tls_mutual_auth) and [Authorization/Authentication](https://docs.nats.io/running-a-nats-service/configuration/securing_nats/auth_intro/jwt).
 
 ### Clustering
 
-Running a single NATS server introduces a SPOF.  In order to provide high availability and scalability, NATS servers support full mesh clustering. Each server is connected to all other servers in the cluster.  There is a one-hop message routing maximum, ensuring messages will never loop througout a cluster.  The servers communicate with each other using a [server-to-server clustering protocol](https://nats-io.github.io/docs/nats_protocol/nats-server-protocol.html) over a TCP connection.  The protocol supports "discovery" to propagate topology information and changes in real-time with other members of the cluster and clients.  Thus, servers can be dynamcially added or removed from a cluster at runtime with zero downtime.  Ideally, a client will have at least 2 addresses of "seed" servers.
+Running a single NATS server introduces a SPOF.  In order to provide high availability and scalability, NATS servers support full mesh clustering. Each server is connected to all other servers in the cluster.  There is a one-hop message routing maximum, ensuring messages will never loop througout a cluster.  The servers communicate with each other using a [server-to-server clustering protocol](https://docs.nats.io/reference/reference-protocols/nats-server-protocol) over a TCP connection.  The protocol supports "discovery" to propagate topology information and changes in real-time with other members of the cluster and clients.  Thus, servers can be dynamcially added or removed from a cluster at runtime with zero downtime.  Ideally, a client will have at least 2 addresses of "seed" servers.
 
 ![NATS Server Cluster](images/cluster.jpg "NATS Server Cluster")
 
 It is important to note that from a client perspective, a NATS cluster is considered one entity.  An officially supported NATS client only requires the address of one server in the cluster to connect, but will then receive the complete cluster topology. The client is able to fail over to other servers in the cluster in the event of a crash or network partition.
 
-More information about clustering can be found [here](https://nats-io.github.io/docs/nats_streaming/clustering/clustering.html).
+More information about clustering can be found [here](https://docs.nats.io/running-a-nats-service/configuration/clustering).
 
 ### Subscriptions and routing
 
-When a NATS client creates a subscription, it registers interest for a subject in the server.  Subjects are discussed in the [protocol conventions](https://nats-io.github.io/docs/nats_protocol/nats-protocol.html).  The server maps interest in this subject to the particular subscription on the client.  When the server receives a message, it inspects the subject, and routes the message to all subscriptions that have interest in the subject.
+When a NATS client creates a subscription, it registers interest for a subject in the server.  Subjects are discussed in the [protocol conventions](https://docs.nats.io/reference/reference-protocols/nats-protocol).  The server maps interest in this subject to the particular subscription on the client.  When the server receives a message, it inspects the subject, and routes the message to all subscriptions that have interest in the subject.
 
 ![NATS Server Routing](images/route1.jpg "NATS Server Routing Diagram")
 
@@ -44,7 +44,7 @@ Notably, messages only get routed to servers in the cluster with client interest
 
 ## Core NATS client design and architecture
 
-The [NATS protocol](https://nats-io.github.io/docs/nats_protocol/nats-protocol.html) is text based and simple, with only a handful of verbs. NATS Clients are fairly straightforward.  Complexity typically falls into reconnection algorithms and the buffering of messages.  Architecture varies based on the idiomatic features of the client language or platforms, although all officially maintained clients support the following features:
+The [NATS protocol](https://docs.nats.io/reference/reference-protocols) is text based and simple, with only a handful of verbs. NATS Clients are fairly straightforward.  Complexity typically falls into reconnection algorithms and the buffering of messages.  Architecture varies based on the idiomatic features of the client language or platforms, although all officially maintained clients support the following features:
  
   - Allow credentials to be passed when connecting to a server
   - TLS support
@@ -88,7 +88,7 @@ Streaming servers can be [partitioned](https://github.com/nats-io/nats-streaming
 
 ## Streaming client design and architecture
 
- The [NATS streaming protocol](https://nats-io.github.io/docs/developer/streaming/protocol.html) is more complex, as it requires a larger number of fields in the internal protocol messages. It is a binary protocol over the NATS protocol utlilizing [protobuf](https://github.com/google/protobuf) for serialization. While NATS streaming clients use *a different client API*, many of the features found in core NATS are available to NATS streaming clients. However, streaming messages and core NATS messages are not interchangable. NATS streaming also uses a separate subject namespace than core NATS, so messages can not be published via streaming and subscribed via core NATS.
+ The [NATS streaming protocol](https://docs.nats.io/legacy/stan/streaming/protocol) is more complex, as it requires a larger number of fields in the internal protocol messages. It is a binary protocol over the NATS protocol utlilizing [protobuf](https://github.com/google/protobuf) for serialization. While NATS streaming clients use *a different client API*, many of the features found in core NATS are available to NATS streaming clients. However, streaming messages and core NATS messages are not interchangable. NATS streaming also uses a separate subject namespace than core NATS, so messages can not be published via streaming and subscribed via core NATS.
  
  All officially supported clients provide the following:
  
