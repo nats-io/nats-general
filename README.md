@@ -17,6 +17,7 @@ If you have any questions or comments on the roadmap, please let us know via Git
 * [Understanding NATS Architecture](architecture/ARCHITECTURE.md)
 * [NATS Design Considerations](architecture/DESIGN.md)
 * [NATS Versioning Scheme](VERSIONING.md)
+* [GitHub_Integrations](GITHUB_INTEGRATIONS.md)
 
 ## Market Analyst Reports
 
