@@ -17,6 +17,7 @@ Current list of NATS Organization Maintainers. Maintainership is on a per projec
   - Waldemar Quevedo <wally@nats.io> [@wallyqs](https://github.com/wallyqs)
   - Alberto Ricart <alberto@nats.io> [@aricart](https://github.com/aricart)
   - Michael Ries <riesmmm@gmail.com> [@mmmries](https://github.com/mmmries)
+  - Byron Ruth <byron@nats.io> [@bruth](https://github.com/bruth)
   - Brian Shannan <brianshannan@gmail.com> [@brianshannan](https://github.com/brianshannan)
   - Oleg Shaldybin <olegsh@google.com> [@olegshaldybin](https://github.com/olegshaldybin)
   - Charlie Strawn <cdstrawn@gmail.com> [@charliestrawn](https://github.com/charliestrawn)
