@@ -61,46 +61,36 @@ The typical flow of a NATS client is very straightforward:
   3. Optionally publish messages.
   4. When finished, a client will disconnect from the NATS server.
 
-# Streaming server
+# JetStream
 
-The [NATS streaming server](https://github.com/nats-io/nats-streaming-server) and streaming clients are a different protocol than core NATS.  Conceptually it's useful to consider NATS Streaming as a layer above NATS - streaming servers are actually core NATS **clients**.  This offers flexibility in allowing NATS streaming servers to have dedicated hosts, distributing work.
+[NATS JetStream](https://docs.nats.io/nats-concepts/jetstream) is a horizontally scalable, distributed, and fault-tolerant datastore for NATS.  It is built-in to the NATS server binary, but must be enabled on a per-server basis.  NATS JetStream is designed to be lightweight, performant, and always available.
 
-When NATS streaming clients connect, they create a *logical* connection over core NATS to a streaming server; one might consider this a session established with the streaming server over core NATS connectivity. The NATS streaming server is associated with a streaming `cluster-id`, which alongside a unique `client-id` provided by a client is used to setup internal unique subjects for streaming clients to server communication. Clients then publish and subscribe to the NATS streaming server, receiving acknowledgements that their messages have been persisted to meet the at-least-once messaging guarantee.
+Conceptually it's useful to consider NATS JetStream as a layer above NATS.  This offers flexibility in allowing NATS JetStream-enabled servers to have dedicated hosts, distributing work.
 
-The NATS streaming server requires a core NATS server to operate and defaults to using a *side-car* architecture by launching a NATS server instance in its process space.  This is a convenience feature.  While there is a single process, when NATS streaming clients connect, they are actually connecting to the internal NATS server.  This internal NATS server is fully functional and can be configured to join an existing core NATS server cluster.  The NATS streaming server can run stand-alone, and connect to an external NATS server cluster.  *Running stand-alone is slightly less convenient, but may yield better performance.*
+Note: NATS JetStream is not to be confused with it's now deprecated predecessor [NATS Streaming](https://nats-io.gitbook.io/legacy-nats-docs/nats-streaming-server-aka-stan).
 
-Regardless, from a network (TCP) standpoint the client and NATS streaming server look like this:
+## NATS JetStream high availability options
 
-![NATS Streaming Server and Clients](images/streaming1.jpg "NATS Streaming Client/Server Diagram")
+Within a cluster the high-availability of JetStream is achieved through replication (with an effective minimum of 3 servers replicating the stream's messages) and the use of a Raft consensus protocol.  This means that if a server fails, the stream will continue to be available on the remaining servers in the cluster, and when the failing server is restarted or replaced it will be automatically resynchronized with the other servers in the cluster.
 
-## NATS Streaming high availability options
+NATS JetStream supports mirroring and sourcing between streams, allowing for data to be replicated between servers and clusters. It also provides for easy placement of the streams on specific clusters and even down to the server level using placement tags (for example to deploy over different availability zones within the same data center or cloud region). Streams can even be moved between servers and clusters at runtime (without any interruption to the stream's availability).
 
-NATS streaming supports two methods to acheive fault tolerance / high availability:
+## Scalability
 
-  * The use of lightweight [fault tolerant](https://docs.nats.io/nats-streaming-concepts/ft) warm standby backups.
-  * Full log replication amongst multiple instances using [Hashicorp RAFT](https://github.com/hashicorp/raft).
+The NATS JetStream-enabled servers distribute the streams amongst themselves, and the clients can connect to any of the servers in the cluster to access the streams.  This means that the clients can be distributed across the cluster, and the streams will be distributed across the JetStream-enabled servers in the cluster.
 
-## Partitioning
+## JetStream client design and architecture
 
-Streaming servers can be [partitioned](https://github.com/nats-io/nats-streaming-server#partitioning) to scale.  Multiple streaming servers in the same cluster distribute work based on assigned channels.
+Clients then just use the JetStream API in the NATS client libraries to access the new features enabled by JetStream.
 
-![NATS Streaming Server Partitioning](images/streaming2.jpg "NATS Streaming Partitioning Diagram")
+Underneath the covers, the NATS client libraries use Core NATS to communicate with the JetStream-enabled servers. This means that the clients can connect to any of the servers in the cluster (in any cluster) to access the streams.
 
-## Streaming client design and architecture
+A client can use JetStream for:
 
- The [NATS streaming protocol](https://docs.nats.io/legacy/stan/streaming/protocol) is more complex, as it requires a larger number of fields in the internal protocol messages. It is a binary protocol over the NATS protocol utlilizing [protobuf](https://github.com/google/protobuf) for serialization. While NATS streaming clients use *a different client API*, many of the features found in core NATS are available to NATS streaming clients. However, streaming messages and core NATS messages are not interchangable. NATS streaming also uses a separate subject namespace than core NATS, so messages can not be published via streaming and subscribed via core NATS.
- 
- All officially supported clients provide the following:
- 
-  - A logical streaming connection with the NATS streaming server over core NATS.
-  - Publishing of Messages
-  - Subscribing to subjects to receive messages, supporting the various subscription options found [here](https://github.com/nats-io/stan.go#subscription-start-ie-replay-options), as well as [durable subscription](https://github.com/nats-io/stan.go#durable-subscriptions) support.
-  - Queue group subscriptions.
-  - Support for handling publish acknowledgements and acknowedging received messages.
-
-The typical flow of a NATS streaming client is very similar to a core NATS client:
-
-1. Establish a connection to a streaming server
-2. Optionally subscribe to subject(s) and setup handlers to process messages.  Messaged are acknowledged.
-3. Optionally publish messages, and handle publish acknowedgements from the server.
-4. When finished, a client will close its connection with the NATS streaming server.
+  - Reliable (acknowledged) publishing of Messages to Streams with optional message deduplication and 'compare and set' concurrency access control.
+  - Message replay (with optional server-side message filtering using subject-based addressing), including the ability to replay messages from a specific time or replay messages from a specific sequence number.
+  - Distributed message replay and consumption without needing a partitioning scheme. 
+  - Exactly-once distributed message consumption (using a stream as a queue).
+  - Message acknowledgement and automated message redelivery with extensive functionality.
+  - Direct 'get' operations on a stream to retrieve individual messages by sequence number subject name.
+  - Key/Value and Object storage.
