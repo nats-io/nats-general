@@ -12,12 +12,12 @@ Any non-breaking change to the protocol results in a minor version bump.  Change
 
 If a protocol version is not specified in code or documentation, one may assume 1.X for the NATS server, and 0.x for the NATS streaming server.  Until the NATS streaming server reaches 1.0, breaking changes, while unlikely, may be introduced.  This is congruent with semantic API versioning.
 
-| Protocol | Current Version | Components |
-| ---------|---------|------------|
-| NATS Client Protocol | 1.0.0 | Client / Server |
-| NATS Server Protocol | 1.0.0 | Server / Server |
-| NATS Steaming Client Protocol | 0.1.0 | Streaming Client / Streaming Server |
-| NATS Streaming Server Protocol | 0.1.0 | Streaming Server / Streaming Server |
+| Protocol | Current Version | Components                                     |
+| ---------|---------|------------------------------------------------|
+| NATS Client Protocol | 1.0.0 | Client / Server                                |
+| NATS Server Protocol | 1.0.0 | Server / Server                                |
+| NATS Steaming Client Protocol | 0.1.0 | Streaming Client / Streaming Server _(Legacy)_ |
+| NATS Streaming Server Protocol | 0.1.0 | Streaming Server / Streaming Server _(Legacy)_ |
 
 When an official client is said to support a specific protocol version, it should support all features associated with that protocol level.  If it cannot due to language, OS, etc., the client must document what features of the protocol it cannot support.
 
