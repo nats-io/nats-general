@@ -83,9 +83,9 @@ The NATS JetStream-enabled servers distribute the streams amongst themselves, an
 
 Clients then just use the JetStream API in the NATS client libraries to access the new features enabled by JetStream.
 
-Underneath the covers the NATS client libraries uses Core NATS to communicate with the JetStream-enabled servers. This means that the clients can connect to any of the servers in the cluster (in any cluster) to access the streams.
+Underneath the covers, the NATS client libraries use Core NATS to communicate with the JetStream-enabled servers. This means that the clients can connect to any of the servers in the cluster (in any cluster) to access the streams.
 
-Client can use JetStream for:
+A client can use JetStream for:
 
   - Reliable (acknowledged) publishing of Messages to Streams with optional message deduplication and 'compare and set' concurrency access control.
   - Message replay (with optional server-side message filtering using subject-based addressing), including the ability to replay messages from a specific time or replay messages from a specific sequence number.
