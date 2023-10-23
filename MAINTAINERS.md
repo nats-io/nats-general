@@ -13,6 +13,7 @@ Current list of NATS Organization Maintainers. Maintainership is on a per projec
   - Phil Pennock <phil-cncf-nats@pennock-tech.com> [@philpennock](https://github.com/philpennock)
   - R.I. Pienaar <rip@devco.net> [@ripienaar](https://github.com/ripienaar)
   - Tomasz Pietrek <tomasz@nats.io> [@jarema](https://github.com/jarema)
+  - Piotr Piotrowski <piotr@nats.io> [@piotrpio](https://github.com/piotrpio)
   - Paulo Pires [@pires](https://github.com/pires)
   - Waldemar Quevedo <wally@nats.io> [@wallyqs](https://github.com/wallyqs)
   - Alberto Ricart <alberto@nats.io> [@aricart](https://github.com/aricart)
