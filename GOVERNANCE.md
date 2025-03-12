@@ -22,13 +22,13 @@ New maintainers must be proposed by an existing maintainer and must be elected b
 
 The NATS project employs "organization voting" to ensure no single organization can dominate the project. Ideally, all project decisions are resolved by consensus, but if this is not possible, maintainers may call a vote.
 
-Individuals not associated with or employed by a company or organization are allowed one organization vote. Each company or organization (regardless of the number of maintainers associated with or employed by that company/organization) receives one organization vote.
+Maintainers employed by a single company or organization are allowed one (1) organization vote (i.e. each company or organization regardless of the number of maintainers currently employed by that company/organization receives one (1) organization vote). Independent maintainers (not currently affiliated with a company/organization as part of their NATS.io maintainership) receive one (1) organization vote.
 
-In other words, if two maintainers are employed by Company X, two by Company Y, two by Company Z, and one maintainer is an un-affiliated individual, a total of four "organization votes" are possible; one for X, one for Y, one for Z, and one for the un-affiliated individual.
+For example, if two maintainers are employed by Company X, two by Company Y, two by Company Z, and one maintainer is an independent individual, a total of four "organization votes" are possible; one for X, one for Y, one for Z, and one for the independent individual.
 
-Any maintainer from an organization may cast the vote for that organization.
+All maintainers from an organization may cast a vote for that organization. If more than one maintainer in a company/organization casts a vote, the vote will be awarded to the majority opinion for that company/organization.
 
-For formal votes, a specific statement of what is being voted on should be added to the relevant Github issue or PR, and a link to that issue or PR added to the maintainers voting document. Maintainers should indicate their yes/no vote on that issue or PR, and after a suitable period of time, the votes will be tallied and the outcome noted.
+For formal votes, a specific statement of what is being voted on should be added to the relevant Github issue or PR. Maintainers should indicate their yes/no vote on that issue or PR, and after a suitable period of time, the votes will be tallied and the outcome noted. A vote not received in the timeframe specified in the issue or PR will be marked as an abstained vote.
 
 ## GitHub Project Administration
 Maintainers will be added to the NATS GitHub organization.
