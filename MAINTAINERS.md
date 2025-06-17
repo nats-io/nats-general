@@ -10,6 +10,7 @@ Current list of NATS Organization Maintainers. Maintainership is on a per projec
   - Matthias Hanel [@matthiashanel](https://github.com/matthiashanel)
   - David Kemper [@davidkemper](https://github.com/davidkemper)
   - Ivan Kozlovic [@kozlovic](https://github.com/kozlovic)
+  - Yuna Morgenstern [@YunaBraska](https://github.com/YunaBraska)
   - Phil Pennock <phil-cncf-nats@pennock-tech.com> [@philpennock](https://github.com/philpennock)
   - R.I. Pienaar <rip@devco.net> [@ripienaar](https://github.com/ripienaar)
   - Tomasz Pietrek <tomasz@nats.io> [@jarema](https://github.com/jarema)
