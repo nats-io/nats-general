@@ -1,5 +1,5 @@
 # Maintainers
-Current list of NATS Organization Maintainers. Maintainership is on a per project basis. You can view our Governance and Maintainership process and definitions in [GOVERNANCE.md](https://github.com/nats-io/nats-general/blob/master/GOVERNANCE.md).
+Current list of NATS Organization Maintainers. Maintainership is on a per project basis. You can view our Governance and Maintainership process and definitions in [GOVERNANCE.md](https://github.com/nats-io/nats-general/blob/main/GOVERNANCE.md).
 
 ### Maintainers
   - Stephen Asbury [@sasbury](https://github.com/sasbury)
