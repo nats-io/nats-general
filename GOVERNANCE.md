@@ -43,4 +43,4 @@ All changes in Governance require a 2/3 majority organization vote of the mainta
 
 NATS follows the CNCF Code of Conduct:
 
-[https://github.com/cncf/foundation/blob/master/code-of-conduct.md](https://github.com/cncf/foundation/blob/master/code-of-conduct.md)
+[https://github.com/cncf/foundation/blob/main/code-of-conduct.md](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
