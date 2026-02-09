@@ -9,7 +9,7 @@ A comprehensive list of technology and industry companies.
 
 ## Companies Table
 
-| Rank | Company | Industry | Website |
+| List | Company | Industry | Website |
 |------|---------|----------|---------|
 | 1 | Rivian | Automotive | https://rivian.com/ |
 | 1 | Replit | AI | https://replit.com/ |
