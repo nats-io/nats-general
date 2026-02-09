@@ -8,7 +8,7 @@ information.
 
 The NATS Product Roadmap shows some of the key features being planned for future delivery.  Only high-level features and issues are listed; we’ll certainly continue to work on minor enhancements that are not mentioned here.
 
-![The NATS Roadmap]([https://nats.io/img/roadmap.png](https://github.com/nats-io/nats-server/milestones))
+[The NATS Roadmap](https://github.com/nats-io/nats-server/milestones)
 
 If you have any questions or comments on the roadmap, please let us know via GitHub [here](https://github.com/nats-io/nats-general/issues/new).  You can also always communicate through Slack or Google Group with us on our [community page](https://www.nats.io/community) - we look forward to hearing from you!
 
