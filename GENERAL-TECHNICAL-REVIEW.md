@@ -233,7 +233,7 @@
 
 - Please provide a link to the project's cloud native security self assessment.
 
-  [Security Assessment](./security-assessment.md)
+  [Security Assessment](./SECURITY-SELF-ASSESSMENT.md)
 
 - Please review the [Cloud Native Security Tenets](https://github.com/cncf/tag-security/blob/main/community/resources/security-whitepaper/v2/cloud-native-security-whitepaper.md) from TAG Security.
   - How are you satisfying the tenets of cloud native security projects?
