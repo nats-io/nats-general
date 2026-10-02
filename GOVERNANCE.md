@@ -55,6 +55,23 @@ All maintainers from an organization may cast a vote for that organization. If m
 
 For formal votes, a specific statement of what is being voted on should be added to the relevant Github issue or PR. Maintainers should indicate their yes/no vote on that issue or PR, and after a suitable period of time, the votes will be tallied and the outcome noted. A vote not received in the timeframe specified in the issue or PR will be marked as an abstained vote.
 
+## Maintainer Affiliation Changes
+
+Maintainer roles are held by individuals based on their contributions to and responsibilities within the project and are not tied to employment by, or affiliation with, a particular company or organization.
+
+Maintainers are expected to keep their organizational affiliation current in the project's Maintainer documentation.
+
+When a Maintainer changes employers, becomes independent, or otherwise changes their organizational affiliation, the Maintainer should:
+
+- Notify the other Maintainers of the affiliation change.
+- Update their affiliation in the project's Maintainer documentation through a pull request.
+- Update any other project or CNCF records where affiliation is maintained, as appropriate.
+- Review any project access, accounts, credentials, or resources that may have been provided through their previous organization and ensure that project responsibilities do not depend on employer-controlled resources.
+
+A change in organizational affiliation does not, by itself, change an individual's Maintainer status, responsibilities, voting rights, or project permissions. If an affiliation change affects the Maintainer's ability to continue performing their project responsibilities, the Maintainer and the other active Maintainers should determine whether responsibilities need to be reassigned or whether transition to Emeritus status is appropriate.
+
+The project will periodically review Maintainer affiliations to ensure that published information remains accurate and that project governance continues to reflect the individuals and organizations participating in project stewardship.
+
 ## Maintainer Offboarding
 
 A Maintainer may leave their role voluntarily or may be removed through the project's established governance and voting process. In either case, the project will make reasonable efforts to ensure an orderly transition of the Maintainer's responsibilities and ongoing work.
