@@ -23,13 +23,13 @@ Maintainers may be specifically responsible for one or more components within a 
 ## Emeritus Status
 Emeritus status recognizes the individual's past contributions to NATS while indicating that they are no longer responsible for the project's day-to-day maintenance or governance.
 
-A Maintainer may request Emeritus status voluntarily. The active Maintainers may also propose an Emeritus transition when a Maintainer has been inactive for an extended period.
+A Maintainer may request Emeritus status voluntarily. The active Maintainers may also propose an Emeritus transition when a Maintainer has been inactive for an extended period and will follow the process for voting in the Project Decision Making and Voting section.
 
 When a Maintainer transitions to Emeritus status:
 
 - The change will be recorded in the project's Maintainer documentation.
 - GitHub or other elevated permissions that are only required by active Maintainers may be removed.
-- The individual will continue to be recognized as an Emeritus Maintainer.
+- The individual will continue to be recognized as an Emeritus Maintainer but will have no voting rights.
 - The transition should be recorded through a public pull request whenever practical.
 
 Emeritus status is not intended as a disciplinary action and does not prevent an individual from continuing to participate in the NATS community.
