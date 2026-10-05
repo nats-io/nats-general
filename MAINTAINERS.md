@@ -25,6 +25,6 @@ Current list of NATS Organization Maintainers. You can view our Governance and M
 | Brian Shannan | brianshannan@gmail.com | [@brianshannan](https://github.com/brianshannan) | Workiva |
 | Oleg Shaldybin | olegsh@google.com | [@olegshaldybin](https://github.com/olegshaldybin) | Independent |
 | Charlie Strawn | cdstrawn@gmail.com | [@charliestrawn](https://github.com/charliestrawn) | Workiva |
-| Colin Sullivan | colin@luxantsolutions.com | [@ColinSullivan1](https://github.com/ColinSullivan1) | Luxor Solutions |
+| Colin Sullivan | colin@luxantsolutions.com | [@ColinSullivan1](https://github.com/ColinSullivan1) | Luxant Solutions |
 | Neil Twigg | neil@nats.io | [@neilalexander](https://github.com/neilalexander) | Synadia |
 | Christopher Watford | christopher.watford@gmail.com | [@sixlettervariables](https://github.com/sixlettervariables) | Essential Personnel |
