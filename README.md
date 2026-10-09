@@ -19,6 +19,10 @@ If you have any questions or comments on the roadmap, please let us know via Git
 * [NATS Versioning Scheme](VERSIONING.md)
 * [GitHub_Integrations](GITHUB_INTEGRATIONS.md)
 
+## Security
+
+* [NATS Security Policy](SECURITY.md)
+
 ## Market Analyst Reports
 
 * Ovum's [On the Radar: NATS](reports/On_The_Radar_NATS.pdf) report
