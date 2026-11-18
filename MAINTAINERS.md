@@ -8,7 +8,7 @@ Current list of NATS Organization Maintainers. You can view our Governance and M
 | Lev Brouk | levbrouk@gmail.com | [@levb](https://github.com/levb) | Independent |
 | Derek Collison | derek@nats.io | [@derekcollison](https://github.com/derekcollison) | Synadia |
 | Ginger Collison | ginger@nats.io | [@gcolliso](https://github.com/gcolliso) | Synadia |
-| Scott Fauerbach | scott@nats.io | [@scottf](https://github.com/scottf) | Synadia |
+| Scott Fauerbach |  scottfauerbach@gmail.com | [@scottf](https://github.com/scottf) | Independent |
 | Matthias Hanel | hanel.matthias@gmail.com | [@matthiashanel](https://github.com/matthiashanel) | Independent |
 | David Kemper | davidjkemper@gmail.com | [@davidkemper](https://github.com/davidkemper) | Independent |
 | Ivan Kozlovic | ijkozlovic@gmail.com | [@kozlovic](https://github.com/kozlovic) | Independent |
